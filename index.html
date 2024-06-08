@@ -2,8 +2,15 @@
   <head>
     <title>Learning CSS</title>
     <style>
+      table, th, td {
+        border:1px solid mediumpurple;
+      }
+      body {
+        background-color: darkorchid;
+      }
       h1 {
-        color: red;
+        text-align: center;
+        color: purple;
       }
 
       p {
@@ -11,83 +18,119 @@
       }
 
       button {
+        background-color:plum;
+        color:blueviolet
       }
 
       /* TODO: add styles for header  */
       
       /* TODO: add styles for footer  */
-
+       footer {
+        background-color: mediumpurple;
+        padding:6px;
+        text-align: center;
+        color:plum
+       }
       .paragraph-1 {
-        background-color: dodgerblue;
+        background-color: plum;
       }
+      .paragraph-2 {
+        background-color: mediumpurple;
+      }
+      .paragraph-3 {
+        background-color: mediumorchid;
+      }
+       .Service {
+        background-color: orchid;
+        color:purple
+      }
+      .FrontalWig {
+        color:purple
+      }
+      .FrontalSewin {
+        color:purple
+      }
+        .price-1 {
+          color: blueviolet
+      }
+        .price-2 {
+          color: blueviolet;
+        }
+        .HOME {
+          color:orchid
+        }
+        .ABOUT {
+          color:purple
+        }
+        .GALLERY {
+          color:plum
+        }
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <style>
+     
+      main {
+        background-color: palevioletred;
+        color:purple;
+      }
+    </style>
     <header>
-      <h1 style="text-decoration: underline">I like cats!
+      <h1 style="text-decoration: underline">Book Your Appointment!
       </h1>
     </header>
+    
     <main>
       <p class="paragraph-1" style="">
-        <em>Nice kitty!</em> Consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar <strong>mattis</strong> nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam.    
+        <em>Hello!</em> Book the <strong>Best</strong> for your next install!
       </p>
     
-      <p style="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
+      <p class="paragraph-2" style="">
+        If you have any questions and want to inquire about a service don't hesitate you can send a Dm.
+        I'm glad to help and I also encourage clients to do their personal research before booking a install to insure that you get the proper care for your hair and desired style.
+       
       </p>
     
-      <p style="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
+      <p class="paragraph-3" style="">
+        Please arrive to your appointment on time you are given a <strong>10</strong> minute grace period.
+        If you are 15-20 minutes late you will be charged a <strong>$25</strong> dollar fee.
+        If you don't communicate or show up to your appt your card will be charged the remaining amount and you will have to pay a <strong>$50</strong> dollar deposit the next time you book a appt with me. 
+        If you aresss <strong>25+</strong> minutes late your appointment will be rescheduled. 
+        I understand unforseen circumstances happen please be sure to communicate so we can get your appt. rescheduled.
+ 
       </p>
     
-      <table>
-        <tr>
-          <th style="">item</th>
-          <th style="">price</th>
+    
+      <table style="width:100%">
+        <tr class="Service" style="">
+          <th style="">Service</th>
+          <th class="Price"style="">Price</th>
         </tr>
         <tr>
-          <td style="">hotwheels car</td>
-          <td style="">$4.99</td>
+          <td class="FrontalWig" style="">
+            Frontal Wig Install</td>
+          <td class="price-1"style="">$200</td>
         </tr>
         <tr>
-          <td style="">
-            Cabbage patch doll
+          <td class="FrontalSewin" style="">
+            Frontal sewin
           </td>
-          <td style="">$1.99</td>
+          <td class="price-2"style="">$180</td>
         </tr>
       </table>
     
-      <button style="">Buy Now!</button>
+      <button style="">Book Now!</button>
     </main>
   
     <nav>
-      <a> HOME </a> |
-      <a> ABOUT </a> |
-      <a> GALLERY </a>
+      <a class="HOME" style="">HOME </a> |
+      <a class="ABOUT" style="">ABOUT </a> |
+      <a class="GALLERY" style="">GALLERY </a>
     </nav>
     
     <footer>
+      ©Bri Styled It
     </footer>
 
     <script src="./script.js"></script>
